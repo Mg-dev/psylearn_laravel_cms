@@ -15,7 +15,15 @@
 <!-- Carousel -->
     <section class="carousel">
         <div class="reel">
-
+            @foreach ($books as $book)
+                <article>
+                    <a href="#" class="image featured"><img src="{{asset('images/pic01.jpg')}}" alt="" /></a>
+                    <header>
+                        <h3><a href="#">{{$book->name}}</a></h3>
+                    </header>
+                    <p>{{$book->description}}</p>
+                </article>
+            @endforeach
             <article>
                 <a href="#" class="image featured"><img src="{{asset('images/pic01.jpg')}}" alt="" /></a>
                 <header>
@@ -24,77 +32,6 @@
                 <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
             </article>
 
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic02.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Fermentum sagittis proin</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
-
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic03.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Sed quis rhoncus placerat</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
-
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic04.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Ultrices urna sit lobortis</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
-
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic05.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Varius magnis sollicitudin</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
-
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic01.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Pulvinar sagittis congue</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
-
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic02.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Fermentum sagittis proin</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
-
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic03.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Sed quis rhoncus placerat</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
-
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic04.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Ultrices urna sit lobortis</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
-
-            <article>
-                <a href="#" class="image featured"><img src="{{asset('images/pic05.jpg')}}" alt="" /></a>
-                <header>
-                    <h3><a href="#">Varius magnis sollicitudin</a></h3>
-                </header>
-                <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-            </article>
 
         </div>
     </section>

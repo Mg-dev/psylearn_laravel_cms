@@ -2590,7 +2590,7 @@ input, select, textarea {
 
 		.carousel .reel {
 			white-space: nowrap;
-			position: relative;
+			/* position: absolute; */
 			-webkit-overflow-scrolling: touch;
 			padding: 0 2em 0 2em;
 		}
