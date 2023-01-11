@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\PublisherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +27,12 @@ Route::get('/news', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+Route::get('publishers',[PublisherController::class,'allPublishers']);
+Route::get('publishers/{id}',[PublisherController::class,'getPublisher']);
+
+Route::get('books',[BookController::class,'getBooks']);
+Route::get('books/{id}',[BookController::class,'getBookDetail']);
+
+
+
